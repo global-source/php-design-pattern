@@ -19,7 +19,7 @@ class Company
      * To Load list of Employees thous are in this
      * company.
      */
-    public function loadEmployees()
+    protected function loadEmployees()
     {
         // Employee List.
         $employees = [
@@ -51,3 +51,6 @@ class Company
     }
 
 }
+
+$company = new Company();
+$company->getEmployees();
