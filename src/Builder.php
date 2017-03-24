@@ -117,6 +117,7 @@ class HTMLPage
     function formatPage()
     {
         // Update to Global Object.
+        // Assign HTML data for Build Page.
         $this->page = '<html>';
         $this->page .= '<head><title>' . $this->page_title . '</title></head>';
         $this->page .= '<body>';
@@ -215,6 +216,7 @@ class HTMLPageDirector extends AbstractPageDirector
      */
     public function buildPage()
     {
+        // Assigning template segment datas.
         $this->builder->setTitle('Testing the HTMLPage');
         $this->builder->setHeading('Testing the HTMLPage');
         $this->builder->setText('Testing, testing, testing!');
@@ -229,6 +231,7 @@ class HTMLPageDirector extends AbstractPageDirector
      */
     public function getPage()
     {
+         // Init Building Page.
         return $this->builder->getPage();
     }
 }
